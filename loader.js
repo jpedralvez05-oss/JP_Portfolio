@@ -3,7 +3,7 @@
     // Makes animation play once after loaded
     if (sessionStorage.getItem('loaderPlayed')) {
         document.getElementById('jp-loader').remove();
-        document.getElementById('jp-wipe-y').remove();
+        document.getElementById('jp-wipe-b').remove();
         document.getElementById('jp-wipe-d').remove();
         return;
     }

@@ -43,4 +43,11 @@
     }
  
     requestAnimationFrame(tick);
+
+    setTimeout(() => {
+        document.getElementById('jp-loader')?.remove();
+        document.getElementById('jp-wipe-b')?.remove();
+        document.getElementById('jp-wipe-d')?.remove();
+    }, 4500);
+    
 })();

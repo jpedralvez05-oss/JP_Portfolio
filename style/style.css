@@ -437,7 +437,7 @@ header {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px), (max-height: 768px) {
     .corner-bracket-L, .corner-bracket-R {
         display: none;
     }

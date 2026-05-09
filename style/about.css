@@ -1,0 +1,218 @@
+.about-section {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 60px;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.corner-bracket-TL {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 90px;
+    height: 90px;
+    border-top: 1px solid #009DFF;
+    border-left: 1px solid #009DFF;
+}
+
+.corner-bracket-TR {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 90px;
+    height: 90px;
+    border-top: 1px solid #009DFF;
+    border-right: 1px solid #009DFF;
+}
+
+.about-header {
+    margin-bottom: -20px;
+}
+
+.about-label {
+    font-size: 12px;
+    color: black;
+    margin-bottom: 10px
+}
+
+.diamond {
+    font-size: 16px;
+    color: #009DFF;
+    margin-right: 6px;
+}
+
+.about-title-wrapper {
+    border-left: 1px solid #009DFF;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    margin-left: -35px;
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Intel One Mono', sans-serif;
+}
+
+.panels {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.right-panel {
+    display: flex;
+    flex: 1;
+}
+
+.bio-panel {
+    border: #009DFF solid 1px;
+    background-color: rgba(0, 157, 255, 0.2);
+    padding: 10px 16px 16px 16px;
+}
+
+.edu-panel, .exp-panel {
+    position: relative;
+    border: #009DFF solid 1px;
+    background-color: white;
+    padding: 10px 16px 16px 16px;
+    flex: 1;
+}
+
+.bio-label {
+    font-size: 12px;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.bio-text {
+    text-align: justify;
+    padding: 0px 20px 5px 20px
+}
+
+.edu-tag, .exp-tag {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 11px;
+    color: black;
+}
+
+.edu-entry {
+    border-left: 2px solid #009DFF;
+    padding-left: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.edu-course {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.edu-uni {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.edu-year {
+    font-size: 11px;
+    color: #888;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.exp-entry {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+.exp-indicator {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #009DFF;
+    background-color: white;
+    margin-top: 4px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.vl {
+    position: absolute;
+    border-left: 1px solid #009DFF;
+    height: 300px;
+    left: 20px;
+    z-index: 0;
+}
+
+.exp-id {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.exp-role {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.exp-company {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.exp-period {
+    font-size: 11px;
+    color: #888;
+}
+
+.section-end {
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media (max-width: 1560px) {
+    .about-section {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 1164px) {
+    .about-section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 798px) {
+    .panels {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,41 @@
+.contact-section {
+    position: relative;
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-top: 60px;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.cont-desc {
+    margin-bottom: 4px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.cont-desc-second {
+    margin-bottom: 24px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.contact-active-tab {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border: #00ff26 solid 1px;
+    background-color: rgba(0, 255, 38, 0.2);
+}
+
+@media (max-width: 1300px) {
+    .contact-section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Intel One Mono', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-size: 14px;
+    background-color: #ffffff;
+    background-image: 
+        linear-gradient(to right, rgba(0, 157, 255, 0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 157, 255, 0.15) 1px, transparent 1px),
+        linear-gradient(to right, rgba(0, 157, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 157, 255, 0.07) 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 10px 10px, 10px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #009DFF;
+    background-color: #ffffff;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-header img{
+    margin-top: 20px;
+    width: 32px;
+    height: auto;
+}
+
+header {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#title-logo {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.navbar a {
+    padding: 10px 10px 2px 10px; 
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none; 
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.3s ease; 
+}
+
+.navbar a.active {
+    border-bottom-color: #009DFF;
+}
+
+.navbar a:hover {
+    border-bottom-color: #add8e6; 
+}
+
+.main-section {
+    margin-left: 30%;
+    margin-top: 110px;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.corner-bracket-L {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    border-top: #009DFF solid 3px;
+    border-left: #009DFF solid 3px;
+    width: 125px;
+    height: 125px;
+}
+
+.corner-bracket-R {
+    position: absolute;
+    bottom: 12%;
+    right: 22%;
+    border-bottom: #009DFF solid 3px;
+    border-right: #009DFF solid 3px;
+    width: 125px;
+    height: 125px;
+}
+
+.cross-hair {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 26%;
+    left: 27%;
+    color: #009DFF;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.cross-hair-circle {
+    position: absolute;
+    top: 28%;
+    left: 27.3%;
+    height: 14px;
+    width: 14px;
+    border: #009DFF solid 2px;
+    border-radius: 50%;
+}
+
+.id-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.id-line hr {
+    width: 70px;
+    border: 1px solid #009DFF;
+}
+
+.id-line p {
+    font-size: 12px;
+    color: black;
+}
+
+.tagline {
+    border-left: 2px solid #009DFF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+.tagline p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tagline span {
+    font-size: 12px;
+    color: black;
+}
+
+.break-line hr {
+    width: 65%;
+    margin-top: 72px;
+    margin-left: -54px;
+    border-top: 2px solid #009DFF ;
+}
+
+.section-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: -50px;
+}
+
+.bottom-bar {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: -10px;
+}
+
+.bottom-bar li::before {
+    content: '■';
+    color: #009DFF;
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+
+.tech-spec {
+    margin-top: 4px;
+}
+
+.subtext {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    color: #606060;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    color: #000000;
+}
+
+#jp-loader {
+    position: fixed;
+    inset: 0;
+    background: #121212;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 48px 56px;
+    transition: opacity 0.2s;
+}
+
+/* grid texture */
+#jp-loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right, rgba(0, 157, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 157, 255, 0.08) 1px, transparent 1px);
+    background-size: 44px 44px;
+}
+
+#jp-loader .jp-pct {
+    font-family: 'Intel One Mono', monospace;
+    font-size: clamp(100px, 18vw, 200px);
+    font-weight: 700;
+    color: #009DFF;
+    line-height: 1;
+    position: relative;
+}
+
+#jp-loader .jp-label {
+    font-family: 'Intel One Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    margin-top: 6px;
+    position: relative;
+}
+
+.jp-progress {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.06);
+}
+
+/* Progress bar fills over 2.5s — matches LOAD_MS in loader.js */
+.jp-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #009DFF;
+    animation: jpFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes jpFill {
+    from { width: 0%; }
+    to   { width: 100%; }
+}
+
+/* Wipe panels sit above the loader */
+#jp-wipe-b, #jp-wipe-d {
+    position: fixed;
+    inset: 0;
+    will-change: transform;
+}
+
+#jp-wipe-b {
+    background: #009DFF;
+    z-index: 1001;
+    transform: translateX(-100%);
+    animation:
+        jpWipeIn  0.42s cubic-bezier(0.76, 0, 0.24, 1) forwards 2.80s,
+        jpWipeOut 0.50s cubic-bezier(0.76, 0, 0.24, 1) forwards 3.36s;
+}
+
+#jp-wipe-d {
+    background: #111110;
+    z-index: 1000;
+    transform: translateX(-100%);
+    animation:
+        jpWipeIn  0.42s cubic-bezier(0.76, 0, 0.24, 1) forwards 2.89s,
+        jpWipeOut 0.50s cubic-bezier(0.76, 0, 0.24, 1) forwards 3.41s;
+}
+
+/* Loader hides after both wipe panels have fully exited */
+#jp-loader {
+    animation: jpLoaderFade 0s forwards 3.50s;
+}
+
+@keyframes jpLoaderFade {
+    to { display: none; }
+}
+
+@keyframes jpWipeIn {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes jpWipeOut {
+    from { transform: translateX(0); }
+    to   { transform: translateX(100%); }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media (max-width: 968px) {
+   .main-section {
+    margin-left: 25%;
+   }
+
+   .corner-bracket-L {
+    left: 18%;
+   }
+
+   .corner-bracket-R {
+    right: 18%;
+   }
+
+   .name, .title {
+    font-size: 84px;
+   }
+
+   .break-line hr {
+    width: 70%;
+   }
+
+   .section-foot {
+    width: 80%;
+   }
+
+   .tech-spec {
+    margin-top: 2px;
+   }
+
+   .cross-hair {
+    left: 22%;
+   }
+
+   .cross-hair-circle {
+    left: 22.5%;
+   }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 12px 16px 16px;
+    }
+    
+    .navbar {
+        gap: 8px;
+        margin-top: 8px;
+    }
+ 
+    .navbar a,
+    .navbar a.active {
+        padding: 6px 8px;
+        
+    }
+
+    .main-section {
+        margin-left: 22%;
+        margin-top: 70px ;
+    }
+
+    .corner-bracket-L {
+        top: 21%;
+    }
+
+    .corner-bracket-R {
+        bottom: 12%;
+    }
+
+    .name, .title {
+        font-size: 10vw;
+    }
+ 
+    .tagline {
+        margin-left: 0;
+        margin-top: 28px;
+    }
+ 
+    .tagline p {
+        font-size: 12px;
+    }
+
+    .tagline span {
+        font-size: 10px;
+    }
+
+    .tech-spec, .cross-hair, .cross-hair-circle {
+        display: none;
+    }
+
+    .corner-bracket-L, .corner-bracket-R {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .bottom-bar {
+        gap: 10px;
+    }
+
+    .bottom-bar li{
+        font-size: 12px;
+    }
+
+    .break-line, .bottom-bar {
+        margin-left: 20%;
+    }
+}

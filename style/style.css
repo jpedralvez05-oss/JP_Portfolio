@@ -436,3 +436,9 @@ header {
         margin-left: 20%;
     }
 }
+
+@media (max-width: 400px) {
+    .corner-bracket-L, .corner-bracket-R {
+        display: none;
+    }
+}
